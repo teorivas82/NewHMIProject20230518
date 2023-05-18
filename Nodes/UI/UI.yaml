@@ -552,6 +552,8 @@ Children:
               Type: PropertyType
               DataType: UInt16
               Value: 0
+      - Name: Button3
+        Type: Button
 - Name: We_Window
   Id: g=a8a384bb1af69f884e38be0fb70b21ae
   Supertype: Window
@@ -805,4 +807,6 @@ Children:
               Type: PropertyType
               DataType: UInt16
               Value: 0
+      - Name: Button3
+        Type: Button
 - File: Paneles/Paneles.yaml
