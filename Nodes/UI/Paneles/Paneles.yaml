@@ -1,0 +1,203 @@
+Name: Paneles
+Type: FolderType
+Children:
+- Name: Tank_1
+  Id: g=7f074190f4477fbfc08b47ade4ad4695
+  Supertype: TankGauge
+  ReferenceType: HasComponent
+  Children:
+  - Name: CircularGauge1
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Tank_UDDT/NodePointer1/Tank_LVL"
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Tank_UDDT/NodePointer1/Tank_Min_LVL"
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Tank_UDDT/NodePointer1/Tank_Max_LVL"
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: Label1
+    Type: Label
+  - Name: Label2
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Tank_UDDT/NodePointer1/Tank_ID"
+  - Name: LED1
+    Type: Led
+    Children:
+    - Name: Active
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Tank_UDDT/NodePointer1/Valve_Out_Status"
+  - Name: LED2
+    Type: Led
+    Children:
+    - Name: Active
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Tank_UDDT/NodePointer1/Valve_In_Status"
+  - Name: Label3
+    Type: Label
+  - Name: Label4
+    Type: Label
+  - Name: Tank_UDDT
+    Type: BaseObjectType
+    Children:
+    - Name: NodePointer1
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"6875fe8d4719d97eb741610dd6317250","Namespace":7}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"90a5b931ff3c022fc6482279752bef50","Namespace":7}
+  - Name: MoveTarget
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@NodeId"
+- Name: Tank_2
+  Id: g=33e0b2886abcb9f2d20e7b66b9589d41
+  Supertype: TankGauge
+  ReferenceType: HasComponent
+  Children:
+  - Name: CircularGauge1
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Tank_UDDT/NodePointer1/Tank_LVL"
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Tank_UDDT/NodePointer1/Tank_Min_LVL"
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Tank_UDDT/NodePointer1/Tank_Max_LVL"
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: Label1
+    Type: Label
+  - Name: Label2
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Tank_UDDT/NodePointer1/Tank_ID"
+  - Name: LED1
+    Type: Led
+    Children:
+    - Name: Active
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Tank_UDDT/NodePointer1/Valve_Out_Status"
+  - Name: LED2
+    Type: Led
+    Children:
+    - Name: Active
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Tank_UDDT/NodePointer1/Valve_In_Status"
+  - Name: Label3
+    Type: Label
+  - Name: Label4
+    Type: Label
+  - Name: Tank_UDDT
+    Type: BaseObjectType
+    Children:
+    - Name: NodePointer1
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"1c758403e64aa4830fa98714a750f08a","Namespace":7}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"90a5b931ff3c022fc6482279752bef50","Namespace":7}
+  - Name: MoveTarget
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@NodeId"
